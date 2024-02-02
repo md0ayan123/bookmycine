@@ -10,8 +10,8 @@ const SummaryScreen = () => {
     console.log(location.state)
 
     return (
-        <div className='SummaryScreen'> 
-            <div className="card-summary d-flex bg-gradient bg-dark">
+        <div className='SummaryScreen '> 
+            <div className="card-summary d-flex bg-gradient bg-dark " >
 
                 <div className='container d-flex py-4 flex-md-row flex-column'>
                                                                                               

@@ -89,7 +89,7 @@ text-transform: uppercase;
 .card-summary{
 height:auto;
 width: 100%;
-border: 2px solid red;
+
 
 }
 
@@ -112,8 +112,6 @@ border: 2px solid red;
    font-size: 18px;
    width: 200px;
    border: 1px solid whitesmoke;
-   /* padding-left:40px; */
-   /* padding-right:40px; */
    padding-top:10px;
    padding-bottom:10px;
    border-radius: 12px;
@@ -164,6 +162,10 @@ border: 2px solid red;
   .booknow{
     margin: auto ;
   }
+  /* .card-summary{
+    display: flex;
+    justify-content: center;
+  } */
   
 }
 
