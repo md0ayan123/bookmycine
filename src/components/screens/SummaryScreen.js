@@ -1,34 +1,36 @@
 import React from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
-// import ShowList from '../ShowList'
 
-const SummaryScreen = (props) => {
+
+const SummaryScreen = () => {
 
     const location = useLocation()
     let data = location.state
     console.log(location.state)
 
     return (
-        <div>
+        <div className='SummaryScreen'> 
             <div className="card-summary d-flex bg-gradient bg-dark">
 
-                <div className='container d-flex py-4'>
+                <div className='container d-flex py-4 flex-md-row flex-column'>
                                                                                               
                     <img height={'100%'} width={300} src={data?.show?.image?.original ? data?.show?.image?.original : "https://static.tvmaze.com/uploads/images/original_untouched/413/1034988.jpg"} className="img-summary" alt="movie" />
-                    <div className='container1  px-4 d-flex flex-column justify-content-evenly'>
-                        <div>
+                    <div className='container1  px-4 d-flex flex-column justify-content-evenly '>
+                        <div >
                             <p className='mt-2'>{data?.show.name}</p>
                             <div className='d-flex'>
                                 <i class="fa-solid fa-star start-color"></i>
                                 <p className='rating'>{Object.values(data?.show?.rating)}/10 rating ({Object.keys(data?.show?.rating)})</p>
                             </div>
-                            <div className="rating-view rounded-2">
-                                <p className='fs-6'><strong>Add your Rating & Review</strong><br /> your rating matter</p>
+                          
+                            <div className="rating-view rounded-2 flex-wrap">
+                                <p className='fs-6'><strong>Add your Rating & Review</strong> <div className='line'>your rating matter</div>  </p>
                                 <div >
-                                    <p className='fs-6 bg-light text-dark fw-bold align-item-center d-flex justify-content-center rounded-1 px-3 py-2 mt-2'>Rate Now</p>
+                                    <p className='fs-6 bg-light text-dark fw-bold align-item-center d-flex justify-content-center rounded-1 px-3 py-2 mt-2 flex-sm-column'>Rate Now</p>
                                 </div>
                             </div>
+                            
 
                             <div className='genres' >
                                 <p className=''>{data?.show.genres.join(", ")}</p>
@@ -43,14 +45,14 @@ const SummaryScreen = (props) => {
                     </div>
                 </div>
             </div>
-            <div className='container my-5' >
+            <div className='container-About mx-4 my-4' >
                 <h3 className='fw-bold '>About the movie</h3>
                 <p className='mt-4'>{data?.show?.summary.replace(/[<p></p><br/>]/g, ' ')}</p>
             </div>
-            {/* <!-- Button trigger modal --> */}
+           
 
 
-            {/* <!-- Modal --> */}
+          
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -79,7 +81,6 @@ const SummaryScreen = (props) => {
                 </div>
             </div>
 
-            {/* <Link to='/'>Go back</Link> */}
         </div>
     )
 }

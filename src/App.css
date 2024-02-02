@@ -45,7 +45,6 @@ border-radius: 10px;
 .watrchnow-btn{
   color: white;
   background-color: #F84464;
-  
   width:100%;
   padding: 15px;
   font-weight: bold;
@@ -58,8 +57,6 @@ border-radius: 10px;
   background-color: white;
   color: #F84464;
   cursor:pointer
-
-  /* border: 5px solid #e97101; */
 }
 
 .category{
@@ -90,16 +87,12 @@ text-transform: uppercase;
   transform: scale(1.15);
 }
 .card-summary{
-height: 450px;
+height:auto;
 width: 100%;
+border: 2px solid red;
 
 }
-/* .card-summary:hover{
 
-} */
-/* .img-summary{
-
-} */
 .box{
   width: 100px;
   height: 200px;
@@ -157,6 +150,26 @@ width: 100%;
   background: linear-gradient(to left, rgb(205, 203, 203) , rgb(58, 58, 58));
   
 }
+@media only screen and (max-width: 436px) {
+  
+
+ .rating-view {
+  
+   font-size: 15px;
+   width:250px;
+   height: 150px;
+   
+   
+  } 
+  .booknow{
+    margin: auto ;
+  }
+  
+}
+
+
+  
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

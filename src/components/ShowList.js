@@ -12,7 +12,7 @@ const ShowList = (props) => {
       <div className='row container mx-auto'>
         {shows?.map((data, index) => {
           console.log(data);
-          return <div className="col-md-3 my-3" key={index} >
+          return <div className="col-md-3 my-3 col-sm-6 " key={index} >
             <div className='main-card-cont'>
               <div className="card" >
                 <div className="bg-gradient bg-dark pt-4 px-4">
