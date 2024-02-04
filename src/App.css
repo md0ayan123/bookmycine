@@ -108,7 +108,8 @@ width: 100%;
 }
 .booknow{
    background-color:#F84464; 
-   color: whitesmoke;
+   
+   color: rgb(249, 245, 245);
    font-size: 18px;
    width: 200px;
    border: 1px solid whitesmoke;
@@ -118,6 +119,7 @@ width: 100%;
   
 
 }
+
 
 .start-color{
   color:#F84464;
@@ -159,13 +161,9 @@ width: 100%;
    
    
   } 
-  .booknow{
-    margin: auto ;
-  }
-  /* .card-summary{
-    display: flex;
-    justify-content: center;
-  } */
+  
+  
+ 
   
 }
 

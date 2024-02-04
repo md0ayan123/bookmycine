@@ -11,9 +11,9 @@ const SummaryScreen = () => {
 
     return (
         <div className='SummaryScreen '> 
-            <div className="card-summary d-flex bg-gradient bg-dark " >
-
-                <div className='container d-flex py-4 flex-md-row flex-column'>
+            <div className="card-summary d-flex bg-gradient bg-dark "  >
+                
+                <div className='container d-flex py-4 flex-md-row flex-column  '>
                                                                                               
                     <img height={'100%'} width={300} src={data?.show?.image?.original ? data?.show?.image?.original : "https://static.tvmaze.com/uploads/images/original_untouched/413/1034988.jpg"} className="img-summary" alt="movie" />
                     <div className='container1  px-4 d-flex flex-column justify-content-evenly '>
@@ -24,7 +24,7 @@ const SummaryScreen = () => {
                                 <p className='rating'>{Object.values(data?.show?.rating)}/10 rating ({Object.keys(data?.show?.rating)})</p>
                             </div>
                           
-                            <div className="rating-view rounded-2 flex-wrap">
+                            <div className="rating-view rounded-2 flex-wrap my-2">
                                 <p className='fs-6'><strong>Add your Rating & Review</strong> <div className='line'>your rating matter</div>  </p>
                                 <div >
                                     <p className='fs-6 bg-light text-dark fw-bold align-item-center d-flex justify-content-center rounded-1 px-3 py-2 mt-2 flex-sm-column'>Rate Now</p>
